@@ -3,6 +3,8 @@ package com.examly.springmutualfund.model;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,23 +19,17 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class Investment {
-
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long investmentId;
     // Linked to Investor -> User
     private Long investorId;
-    
     // Linked to MutualFund
     private int mutualFundId;
-
     private double amountInvested;
-
     private double unitsPurchased;
-
     private double currentValue;
-
     private boolean isRecurring;
-
     private LocalDateTime purchaseDate;
     
 }

@@ -19,7 +19,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class User {
-     @Id
+    @Id
     private int userId;
     private String username;
     private String email;

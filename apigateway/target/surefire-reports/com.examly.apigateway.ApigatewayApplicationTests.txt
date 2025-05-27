@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.apigateway.ApigatewayApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 37, Errors: 3, Skipped: 0, Time elapsed: 3.316 s <<< FAILURE! - in com.examly.apigateway.ApigatewayApplicationTests
-com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterInvestor  Time elapsed: 0.491 s  <<< FAILURE!
+Tests run: 40, Failures: 37, Errors: 3, Skipped: 0, Time elapsed: 3.73 s <<< FAILURE! - in com.examly.apigateway.ApigatewayApplicationTests
+com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterInvestor  Time elapsed: 0.551 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -83,7 +83,7 @@ org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_F
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterFundManager  Time elapsed: 0.013 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterFundManager  Time elapsed: 0.014 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -164,7 +164,7 @@ org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_F
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterAdministrator  Time elapsed: 0.01 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testRegisterAdministrator  Time elapsed: 0.015 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -245,7 +245,7 @@ org.opentest4j.AssertionFailedError: expected: <201 CREATED> but was: <404 NOT_F
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginInvestor  Time elapsed: 0.016 s  <<< ERROR!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginInvestor  Time elapsed: 0.042 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
 	at com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginInvestor(ApigatewayApplicationTests.java:146)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -320,7 +320,7 @@ java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.Js
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginFundManager  Time elapsed: 0.01 s  <<< ERROR!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginFundManager  Time elapsed: 0.014 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
 	at com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginFundManager(ApigatewayApplicationTests.java:165)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -395,7 +395,7 @@ java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.Js
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginAdministrator  Time elapsed: 0.009 s  <<< ERROR!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginAdministrator  Time elapsed: 0.013 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null
 	at com.examly.apigateway.ApigatewayApplicationTests.backend_testLoginAdministrator(ApigatewayApplicationTests.java:182)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -470,7 +470,7 @@ java.lang.NullPointerException: Cannot invoke "com.fasterxml.jackson.databind.Js
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_AsFundManager  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_AsFundManager  Time elapsed: 0.005 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -550,7 +550,7 @@ org.opentest4j.AssertionFailedError: FundManager token should not be null ==> ex
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_InvalidToken  Time elapsed: 0.007 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_InvalidToken  Time elapsed: 0.014 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <401 UNAUTHORIZED> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -711,7 +711,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_AsInvestor  Time elapsed: 0.002 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddMutualFund_AsInvestor  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -791,7 +791,7 @@ org.opentest4j.AssertionFailedError: Investor token should not be null ==> expec
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetMutualFundById_AsFundManager  Time elapsed: 0.014 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetMutualFundById_AsFundManager  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -951,7 +951,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetMutualFundById_AsInvestor  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetMutualFundById_AsInvestor  Time elapsed: 0.026 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1031,7 +1031,7 @@ org.opentest4j.AssertionFailedError: Investor token should not be null ==> expec
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllMutualFunds_AsFundManager  Time elapsed: 0.002 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllMutualFunds_AsFundManager  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1191,7 +1191,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllMutualFunds_AsInvestor  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllMutualFunds_AsInvestor  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1511,7 +1511,7 @@ org.opentest4j.AssertionFailedError: Investor token should not be null ==> expec
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsFundManager  Time elapsed: 0.002 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsFundManager  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1591,7 +1591,7 @@ org.opentest4j.AssertionFailedError: FundManager token should not be null ==> ex
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsAdministrator  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsAdministrator  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Administrator token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1671,7 +1671,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsInvestor  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddRiskAssessment_AsInvestor  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -1911,7 +1911,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetRiskAssessmentById_AsInvestor  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetRiskAssessmentById_AsInvestor  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2311,7 +2311,7 @@ org.opentest4j.AssertionFailedError: Investor token should not be null ==> expec
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddFeedbackByAdministrator  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddFeedbackByAdministrator  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Administrator token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2391,7 +2391,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testAddFeedbackByFundManager  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testAddFeedbackByFundManager  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2471,7 +2471,7 @@ org.opentest4j.AssertionFailedError: FundManager token should not be null ==> ex
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllFeedbackByFundManager  Time elapsed: 0.001 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllFeedbackByFundManager  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: FundManager token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2631,7 +2631,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllFeedbackByInvestor  Time elapsed: 0.002 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetAllFeedbackByInvestor  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2711,7 +2711,7 @@ org.opentest4j.AssertionFailedError: Investor token should not be null ==> expec
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testGetFeedbackByUserIdAsInvestor  Time elapsed: 0.003 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testGetFeedbackByUserIdAsInvestor  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Investor token should not be null ==> expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -2951,7 +2951,7 @@ org.opentest4j.AssertionFailedError: Administrator token should not be null ==> 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginInvestor  Time elapsed: 0.008 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginInvestor  Time elapsed: 0.011 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <403 FORBIDDEN> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -3032,7 +3032,7 @@ org.opentest4j.AssertionFailedError: expected: <403 FORBIDDEN> but was: <404 NOT
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginAdministrator  Time elapsed: 0.01 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginAdministrator  Time elapsed: 0.012 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <403 FORBIDDEN> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -3113,7 +3113,7 @@ org.opentest4j.AssertionFailedError: expected: <403 FORBIDDEN> but was: <404 NOT
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginFundManager  Time elapsed: 0.01 s  <<< FAILURE!
+com.examly.apigateway.ApigatewayApplicationTests.backend_testInvalidCredentialsLoginFundManager  Time elapsed: 0.011 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <403 FORBIDDEN> but was: <404 NOT_FOUND>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

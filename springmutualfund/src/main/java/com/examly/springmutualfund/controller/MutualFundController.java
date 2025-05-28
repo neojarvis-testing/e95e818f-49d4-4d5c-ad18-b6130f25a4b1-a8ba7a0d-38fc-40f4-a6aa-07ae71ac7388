@@ -41,9 +41,4 @@ public class MutualFundController {
         return ResponseEntity.ok(mutualFundService.getAllMutualFunds());
     }
 
-
-
-    
-
-    
 }

@@ -4,8 +4,13 @@ import java.util.Map;
 
 import org.springframework.http.ResponseEntity;
 import com.examly.springappuser.security.JwtUtil;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +29,7 @@ public class AuthController {
     private UserRepo userRepo;
     private PasswordEncoder passwordEncoder;
     private JwtUtil jwtUtil;
+    private UserDetailsService userDetailsService;
 
     public AuthenticationManager getAuthenticationManager() {
         return authenticationManager;
@@ -57,11 +63,22 @@ public class AuthController {
         this.jwtUtil = jwtUtil;
     }
 
+    public UserDetailsService getUserDetailsService() {
+        return userDetailsService;
+    }
+
+    public void setUserDetailsService(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
+
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginDTO loginDTO)
     {
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getEmail(), loginDTO.getPassword()));
-        String token = jwtUtil.generateToken(loginDTO.getEmail());
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDTO.getEmail(), loginDTO.getPassword()));
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        UserDetails userDetails = userDetailsService.loadUserByUsername(loginDTO.getEmail());
+        String token = jwtUtil.generateToken(userDetails);
         return ResponseEntity.ok(Map.of("token",token));
 
     }
@@ -76,6 +93,8 @@ public class AuthController {
             "userId", savedUser.getUserId()
         ));
     }
+
+    
 
     
 }

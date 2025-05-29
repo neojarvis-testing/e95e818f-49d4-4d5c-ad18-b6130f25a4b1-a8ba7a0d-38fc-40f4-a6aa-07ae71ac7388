@@ -1,6 +1,11 @@
 package com.examly.springappuser.model;
 
 import java.math.BigDecimal;
+import java.util.Collection;
+import java.util.Collections;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -34,5 +39,8 @@ public class User {
 
     private boolean isActive;
     private BigDecimal balance;
-    
+
+    public Collection<? extends GrantedAuthority> getAuthorities(){
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + userRole.name()));
+    }
 }
